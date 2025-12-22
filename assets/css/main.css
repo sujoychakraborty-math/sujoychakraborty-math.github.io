@@ -295,32 +295,7 @@ li > .active {
 
 
 
-/* ============================= */
-/* NAVBAR TAB COLORS - MODIFIED  */
-/* ============================= */
 
-/* Default tab color with smooth transitions */
-#top-nav .nav-link {
-    color: #1f2937;          /* dark gray */
-    font-weight: 500;
-    text-decoration: none;   /* Removes default underline until hover */
-    
-    /* This creates the smooth fade effect for color and the bottom border */
-    transition: color 0.3s ease, border-color 0.3s ease; 
-    border-bottom: 3px solid transparent; /* Hidden border to prevent jumping when active */
-}
 
-/* Hover effect */
-#top-nav .nav-link:hover {
-    color: #2563eb;          /* blue */
-    filter: brightness(1.1); /* Subtle brightness boost */
-}
-
-/* Active tab - Uses currentColor to match the text color automatically */
-#top-nav .nav-link.active {
-    color: #1d4ed8;          /* darker blue */
-    font-weight: 600;
-    border-bottom: 3px solid currentColor; 
-}
 
 
