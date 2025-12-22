@@ -276,7 +276,6 @@ li > .active {
 /* Default tab color */
 #top-nav .nav-link {
 	color: #1f2937;          /* dark gray */
-	transition: color 0.3s ease; /* Makes color changes smooth */
 	font-weight: 500;
 }
 
@@ -290,5 +289,6 @@ li > .active {
 	color: #1d4ed8;          /* darker blue */
 	border-bottom: 3px solid #1d4ed8;
 }
+
 
 
