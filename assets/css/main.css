@@ -289,3 +289,25 @@ li > .active {
 	color: #1d4ed8;          /* darker blue */
 	border-bottom: 3px solid #1d4ed8;
 }
+
+/* ============================= */
+/* NAVBAR TAB FONT COLORS */
+/* ============================= */
+
+/* Inactive tabs (default text color) */
+#top-nav .nav-link {
+	color: #374151;          /* dark gray */
+	font-weight: 500;
+}
+
+/* Hovered tab text */
+#top-nav .nav-link:hover {
+	color: #2563eb;          /* blue */
+}
+
+/* Active tab text */
+#top-nav .nav-link.active {
+	color: #1d4ed8;          /* strong blue */
+}
+
+
