@@ -269,41 +269,41 @@ li > .active {
 }
 
 
-/* ============================= */
-/* NAVBAR TAB COLORS */
-/* ============================= */
 
-/* Default tab color */
+
+/* ========================================= */
+/* NAVBAR CUSTOM COLORS */
+/* ========================================= */
+
+/* General style for all links in the top nav */
 #top-nav .nav-link {
-	color: #1f2937;          /* dark gray */
-	font-weight: 500;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Makes color changes smooth */
+    color: #4b5563;              /* Default Gray */
 }
 
-/* Hover effect */
+/* Individual Colors based on the link destination */
+#top-nav .nav-link[href*="publications"] {
+    color: #2bd284; /* Green */
+}
+
+#top-nav .nav-link[href*="seminars"] {
+    color: #2563eb; /* Blue */
+}
+
+#top-nav .nav-link[href*="cv"] {
+    color: #8b5cf6; /* Purple */
+}
+
+/* Hover Effects - Makes them brighter when you point at them */
 #top-nav .nav-link:hover {
-	color: #2563eb;          /* blue */
+    filter: brightness(1.2);
+    text-decoration: underline;
 }
 
-/* Active tab */
+/* Active Tab - Highlights the page you are currently on */
 #top-nav .nav-link.active {
-	color: #1d4ed8;          /* darker blue */
-	border-bottom: 3px solid #1d4ed8;
+    font-weight: 700;
+    border-bottom: 2px solid currentColor;
 }
 
-
-
-/* ============================= */
-/* FORCE NAVBAR TAB FONT COLORS */
-/* ============================= */
-
-#top-nav.navbar-light .navbar-nav .nav-link {
-	color: #374151 !important;   /* inactive tabs */
-}
-
-#top-nav.navbar-light .navbar-nav .nav-link:hover {
-	color: #2563eb !important;   /* hover */
-}
-
-#top-nav.navbar-light .navbar-nav .nav-link.active {
-	color: #1d4ed8 !important;   /* active tab */
-}
