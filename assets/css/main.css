@@ -311,3 +311,27 @@ li > .active {
 }
 
 
+
+
+
+
+
+
+
+
+#aboutme.nav-link.active {
+	color: #0f172a;          /* near-black */
+}
+
+#publications.nav-link.active {
+	color: #7c3aed;          /* purple */
+}
+
+#academic.nav-link.active {
+	color: #059669;          /* green */
+}
+
+#projects.nav-link.active {
+	color: #d97706;          /* amber */
+}
+
