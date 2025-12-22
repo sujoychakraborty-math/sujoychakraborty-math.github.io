@@ -265,4 +265,27 @@ li > .active {
 	.abme-honors-bullet{
 		margin-left: 40px;
 	}
+
+}
+
+
+/* ============================= */
+/* NAVBAR TAB COLORS */
+/* ============================= */
+
+/* Default tab color */
+#top-nav .nav-link {
+	color: #1f2937;          /* dark gray */
+	font-weight: 500;
+}
+
+/* Hover effect */
+#top-nav .nav-link:hover {
+	color: #2563eb;          /* blue */
+}
+
+/* Active tab */
+#top-nav .nav-link.active {
+	color: #1d4ed8;          /* darker blue */
+	border-bottom: 3px solid #1d4ed8;
 }
