@@ -269,48 +269,23 @@ li > .active {
 }
 
 
-
-
-
-
 /* ============================= */
-/* NAVBAR TAB COLORS - CUSTOM    */
+/* NAVBAR TAB COLORS */
 /* ============================= */
 
-/* 1. Base Setup for ALL Tabs (Transitions) */
+/* Default tab color */
 #top-nav .nav-link {
-    color: #555;             /* Default text color (Gray) */
-    font-weight: 500;
-    border-bottom: 3px solid transparent; /* Invisible border prevents jumping */
-    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+	color: #1f2937;          /* dark gray */
+	font-weight: 500;
 }
 
-/* ------------------------------------------ */
-/* 2. PUBLICATIONS TAB (Green)                */
-/* ------------------------------------------ */
-/* When you hover or it is active */
-#top-nav .nav-link[href*="publications"]:hover,
-#top-nav .nav-link[href*="publications"].active {
-    color: #2bd284 !important;             /* Green text */
-    border-bottom-color: #2bd284 !important; /* Green underline */
+/* Hover effect */
+#top-nav .nav-link:hover {
+	color: #2563eb;          /* blue */
 }
 
-/* ------------------------------------------ */
-/* 3. SHORT CV TAB (Purple)                   */
-/* ------------------------------------------ */
-/* When you hover or it is active */
-#top-nav .nav-link[href*="cv"]:hover,
-#top-nav .nav-link[href*="cv"].active {
-    color: #8b5cf6 !important;             /* Purple text */
-    border-bottom-color: #8b5cf6 !important; /* Purple underline */
-}
-
-/* ------------------------------------------ */
-/* 4. SEMINARS TAB (Blue)                     */
-/* ------------------------------------------ */
-/* When you hover or it is active */
-#top-nav .nav-link[href*="seminars"]:hover,
-#top-nav .nav-link[href*="seminars"].active {
-    color: #2563eb !important;             /* Blue text */
-    border-bottom-color: #2563eb !important; /* Blue underline */
+/* Active tab */
+#top-nav .nav-link.active {
+	color: #1d4ed8;          /* darker blue */
+	border-bottom: 3px solid #1d4ed8;
 }
