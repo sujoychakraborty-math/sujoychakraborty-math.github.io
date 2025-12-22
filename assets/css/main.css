@@ -293,40 +293,34 @@ li > .active {
 
 
 
-/* ========================================= */
-/* NAVBAR CUSTOM COLORS */
-/* ========================================= */
 
-/* General style for all links in the top nav */
+
+/* ============================= */
+/* NAVBAR TAB COLORS - MODIFIED  */
+/* ============================= */
+
+/* Default tab color with smooth transitions */
 #top-nav .nav-link {
+    color: #1f2937;          /* dark gray */
     font-weight: 500;
-    transition: color 0.3s ease; /* Makes color changes smooth */
-    color: #4b5563;              /* Default Gray */
+    text-decoration: none;   /* Removes default underline until hover */
+    
+    /* This creates the smooth fade effect for color and the bottom border */
+    transition: color 0.3s ease, border-color 0.3s ease; 
+    border-bottom: 3px solid transparent; /* Hidden border to prevent jumping when active */
 }
 
-/* Individual Colors based on the link destination */
-#top-nav .nav-link[href*="publications"] {
-    color: #2bd284; /* Green */
-}
-
-#top-nav .nav-link[href*="seminars"] {
-    color: #2563eb; /* Blue */
-}
-
-#top-nav .nav-link[href*="cv"] {
-    color: #8b5cf6; /* Purple */
-}
-
-/* Hover Effects - Makes them brighter when you point at them */
+/* Hover effect */
 #top-nav .nav-link:hover {
-    filter: brightness(1.2);
-    text-decoration: underline;
+    color: #2563eb;          /* blue */
+    filter: brightness(1.1); /* Subtle brightness boost */
 }
 
-/* Active Tab - Highlights the page you are currently on */
+/* Active tab - Uses currentColor to match the text color automatically */
 #top-nav .nav-link.active {
-    font-weight: 700;
-    border-bottom: 2px solid currentColor;
+    color: #1d4ed8;          /* darker blue */
+    font-weight: 600;
+    border-bottom: 3px solid currentColor; 
 }
 
 
