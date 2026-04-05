@@ -82,6 +82,11 @@ li > .active {
 	font-weight: 100;
 }
 
+.pub-year-h4 {
+	font-size: 2.2em;
+	font-weight: 100;
+}
+
 .pub-authors {
 	font-weight: 400;
 }
